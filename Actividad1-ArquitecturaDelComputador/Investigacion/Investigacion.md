@@ -42,9 +42,14 @@ Se asigna un valor arbitrario de 79 para trabajar por debajo del 100 pedido, lue
 ####- ¿Qué hace este programa?  
 Este programa registra el dato almacenado dentro de la RAM en un espacio determinado, y usa esta informacion almacenada de forma temporal para sumarla a el valor dentro de otro espacio sin almacenarla dentro de esta memoria, luego la introduce en la memoria de otro espacio.   
 ####- En qué posición de la memoria está `var1`, `var2` y `var3`? ¿Por qué en esas posiciones?  
-Estas posiciones se ubican directamente despues de los espacios esenciales de la memoria, significando que apuntan al 16, 17 y 18 respectivamente. El programa seria funcional en la forma del ejemplo, pero se requiere asignar algun valor a la memoria de esas posiciones para comprobar su correcto funcionamiento.
+Estas posiciones se ubican directamente despues de los bits esenciales (0-15) de la memoria, significando que apuntan al 16, 17 y 18 respectivamente. El programa seria funcional en la forma del ejemplo, pero se requiere asignar algun valor a la memoria de esas posiciones para comprobar su correcto funcionamiento.
 
 ###Reto 9  
+####- ¿Qué hace este programa?  
+Este programa tiene el funcionamiento de sumar el valor de la primera posicion posible a si mismo registrando el valor original en el espacio donde se ejecuta la suma y el nuevo valor en el espacio inicial.  
+####- ¿En qué parte de la memoria RAM está la variable `i` y `sum`? ¿Por qué en esas posiciones?  
+Se encuentran en los primeros espacios disponibles (16 y 17) en el sistema de 16 bits que se trabaja.  
+Se puede optimizar cambiando el destino de la suma de la memoria temporal (D) al referente de la RAM (M).  
   
 ###Reto 10  
   
