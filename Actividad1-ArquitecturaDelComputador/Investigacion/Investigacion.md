@@ -4,10 +4,9 @@
   
 ###Actividad 1  
 ####- Qué es un computador digital moderno?  
-  
+Los computadores digitales modernos se basan en la arquitectura base de von Neumann la cual se conforma principalmente de una CPU, la cual interactua con la memoria del dispositivo y que recibe y envia datos por medio de sistemas o dispositivos dedicados a estas tareas. Estos computadores funcionan a partir del concepto del programa guardado, donde la memoria guarda los datos y las instrucciones del funcionamiento del computador.  
 ####- ¿Cuáles son sus partes?  
-  
-  
+Un computador se compone de CPU, RAM, ROM Y sus perifericos (input/output) en su construccion basica final.  
 ###Actividad 2  
 ####- ¿Qué es entonces un programa?  
   
@@ -18,7 +17,7 @@
 
 ###Actividad 3  
 ####- ¿Qué son PC, D y A?  
-  
+PC se refiere a la posicion activa del ROM en la CPU, D es la memoria temporal con la cual es posible manejar los datos y A es la referencia del espacio actual dentro de la ROM como dato.  
 ####- ¿Para qué los usa la CPU?  
   
   
@@ -43,7 +42,7 @@ Se asigna un valor arbitrario de 79 para trabajar por debajo del 100 pedido, lue
 ####- ¿Qué hace este programa?  
 Este programa registra el dato almacenado dentro de la RAM en un espacio determinado, y usa esta informacion almacenada de forma temporal para sumarla a el valor dentro de otro espacio sin almacenarla dentro de esta memoria, luego la introduce en la memoria de otro espacio.   
 ####- En qué posición de la memoria está `var1`, `var2` y `var3`? ¿Por qué en esas posiciones?  
-Estas posiciones tendrian que estar referenciadas  
+Estas posiciones se ubican directamente despues de los espacios esenciales de la memoria, significando que apuntan al 16, 17 y 18 respectivamente. El programa seria funcional en la forma del ejemplo, pero se requiere asignar algun valor a la memoria de esas posiciones para comprobar su correcto funcionamiento.
 
 ###Reto 9  
   

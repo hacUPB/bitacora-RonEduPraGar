@@ -1,9 +1,6 @@
-(var1)
-(var2)
-(var3)
 @var1
-D = M
+D=M
 @var2
-D = D + M
+D=D+M
 @var3
-M = D
+M=D
