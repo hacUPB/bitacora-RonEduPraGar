@@ -69,7 +69,7 @@ Son etiquetas con el proposito de guiar dentro del codigo la intencion de las ac
 Desde su mencion son asignados a espacios diferentes de memoria, definiendo esencialmente lo que conocemos como variables y permitiendo ir a esos espacios con esos simbolos dentro del codigo.  
   
 ###Reto 12  
-  
+Uso basico de las referencias a los espacios iniciales para sumar valores 2 veces a un espacio especifico.  
 ###Reto 13  
   
 ###Reto 14  
