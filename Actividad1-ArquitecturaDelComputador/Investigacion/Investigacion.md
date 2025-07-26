@@ -52,8 +52,21 @@ Se encuentran en los primeros espacios disponibles (16 y 17) en el sistema de 16
 Se puede optimizar cambiando el destino de la suma de la memoria temporal (D) al referente de la RAM (M).  
   
 ###Reto 10  
+Este reto es util en cuanto a que permite identificar la referencia correcta para los espacios iniciales de la ROM a la vez que implica su importancia con su nombramiento especifico en comparacion del resto de los bits.  
   
 ###Reto 11  
+####- ¿Qué hace este programa?  
+Crea un bucle que cuenta desde 1000 hasta 0, donde al hacer la ultima comparacion con 0 rompe el bucle y sigue en su ejecucion normal (no hay comando de finalizacion).  
+####- ¿En qué memoria está almacenada la variable i? ¿En qué dirección de esa memoria?  
+Se almacena desde la primera posicion posible (16), esto sucede en la posicion 4 de la ROM dentro del simulador, dentro del codigo, es la posicion 8 debido a los comentarios y las etiquetas. 
+####- ¿En qué memoria y en qué dirección de memoria está almacenado el comentario //`i = 1000?`  
+El comentario no se almacena dentro de la ROM, estos son esencialmente invisibles a las memorias.  
+####- ¿Cuál es la primera instrucción del programa anterior? ¿En qué memoria y en qué dirección de memoria está almacenada esa instrucción?  
+Su primera instruccion es el registro del dato de posicion (A) a la memoria temporal (D), esta instruccion sucede en la posicion 2 en el simulador, o la posicion 3 dentro del codigo.  
+####- ¿Qué son CONT y LOOP?  
+Son etiquetas con el proposito de guiar dentro del codigo la intencion de las acciones que se lleven a cabo, ya que estas no son siempre claras y podrian causar confusion en sus proximas revisiones, ya sean estas hechas por la misma persona.  
+####- ¿Cuál es la diferencia entre los símbolos `i` y `CONT`?  
+Desde su mencion son asignados a espacios diferentes de memoria, definiendo esencialmente lo que conocemos como variables y permitiendo ir a esos espacios con esos simbolos dentro del codigo.  
   
 ###Reto 12  
   
