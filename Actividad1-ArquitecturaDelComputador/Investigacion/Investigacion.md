@@ -11,15 +11,15 @@ Un computador se compone de CPU, RAM, ROM Y sus perifericos (input/output) en su
 ####- ¿Qué es entonces un programa?  
   
 ####- ¿Qué es un lenguaje ensamblador?  
-  
+Tipo de lenguaje que trabaja en base al entendimiento mas directo posible del codigo binario  
 ####- ¿Qué es lenguaje de máquina?  
-  
+Tipo de lenguaje  
 
 ###Actividad 3  
 ####- ¿Qué son PC, D y A?  
-PC se refiere a la posicion activa del ROM en la CPU, D es la memoria temporal con la cual es posible manejar los datos y A es la referencia del espacio actual dentro de la ROM como dato.  
+PC se refiere a la posicion activa del ROM en la CPU, D es la memoria temporal con la cual es posible manejar los datos y A es la referencia del espacio actual dentro de la ROM como dato accesible.  
 ####- ¿Para qué los usa la CPU?  
-  
+La Unidad Central de Procesamiento es lo que describe su nombre, esta es la que acarrea los procesos mas importantes y basicos de un computador, siendo la que recibe las instrucciones en su lenguaje mas primitivo desde la memoria, haciendo el proceso repetitivo de leer, decodificar y ejecutar estas instrucciones en bucle, a la vez que busca la siguiente a ejecutar.  
   
 ###Actividad 4  
   
