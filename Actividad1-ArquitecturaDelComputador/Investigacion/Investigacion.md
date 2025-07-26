@@ -40,7 +40,11 @@ Introducción básica al funcionamiento de los saltos por comparación iniciando
 Se asigna un valor arbitrario de 79 para trabajar por debajo del 100 pedido, luego se aplica el valor a la posición 100 y se le resta a la D el valor de A(posición), con esto, durante la comparación el valor de D esta por debajo de 0 (es -21) y activa el salto a la posición 20, donde se registra el valor de D para verificación debido a que no se muestra correctamente dentro del registro del editor usado.
   
 ###Reto 8  
-  
+####- ¿Qué hace este programa?  
+Este programa registra el dato almacenado dentro de la RAM en un espacio determinado, y usa esta informacion almacenada de forma temporal para sumarla a el valor dentro de otro espacio sin almacenarla dentro de esta memoria, luego la introduce en la memoria de otro espacio.   
+####- En qué posición de la memoria está `var1`, `var2` y `var3`? ¿Por qué en esas posiciones?  
+Estas posiciones tendrian que estar referenciadas  
+
 ###Reto 9  
   
 ###Reto 10  

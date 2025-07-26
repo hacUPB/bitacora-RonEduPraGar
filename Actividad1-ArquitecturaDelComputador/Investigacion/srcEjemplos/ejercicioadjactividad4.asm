@@ -1,0 +1,18 @@
+//en RAM 2 guardar RAM 0 + RAM 1 + 17
+@300
+D=A
+@0
+M=D
+@2
+M=D+M
+@450
+D=A
+@1
+M=D
+@2
+M=D+M
+@17
+D=A
+@2
+M=D+M
+//PRIMERO RESOLVER LUEGO MEJORAR
