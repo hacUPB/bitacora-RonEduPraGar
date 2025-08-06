@@ -26,13 +26,18 @@ int sum = 0;
 For (i == 0; i <= 100; i++){
    sum += i;
 }  
-  
-### Reto 3  
-  
 
+  
 ### Reto 4  
+#### - ¿Cómo se declara un puntero en C++?  
+Por medio del asterisco(*) antes del nombre de la variable es posible identificar que se refiere a la posicion en vez de al valor de las variables, asi mismo, no puede interactuar directamente con variables sin este indicador.  
+#### - ¿Cómo se define un puntero en C++?  
+Por medio del caracter ampersand (&) el cual identifica el numero de direccion de la variable, valor que se quiere almancenar en el puntero.  
+#### - ¿Cómo se almacena en C++ la dirección de memoria de una variable?  
   
-
+#### - ¿Cómo se escribe el contenido de la variable a la que apunta un puntero?  
+  
+  
 ### Reto 5
 
   
