@@ -6,7 +6,15 @@ D=M
 D=D-A
 @draw
 D;JEQ
-(erase)
+@100
+D=D+A
+@101
+D=D-A
+@erase
+D;JEQ
+@R0
+0;JMP
+(draw)
 	// put bitmap location value in R12
 	// put code return address in R13
 	@SCREEN
@@ -483,9 +491,7 @@ D;JEQ
 	@R13
 	A=M
 	D;JMP
-@R0
-0;JMP
-(draw)
+(erase)
 	// put bitmap location value in R12
 	// put code return address in R13
 	@SCREEN
