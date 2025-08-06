@@ -18,11 +18,15 @@ Es interesante ver como el programa maneja los diferentes posibles elementos obt
 ## Retos  
   
 ### Reto 1  
-  
+En este reto se hace uso de i como indicador de los ciclos o el numero de ciclos que lleva funcionando la operacion, asi podemos calcular exactamente el numero paso a paso, existen otros metodos por los cuales es posible comprobar que da 5050 que son menos complejos pero que no se pueden ejecutar directamente en este nivel de programacion, esta forma (un bucle que repite la operacion) permite ejecutarlo incluso en el nivel mas basico posible.  
+i (RAM 16) toma el valor al cual se quiere llegar para evitar tener que comparar al final del proceso para generar el salto que finaliza el bucle, mientras que el proceso de sumatoria (RAM 17) esta directamente inscrito dentro del bucle al lado de la operacion que reduce a la variable i cada ciclo. Con base en el programa que nos proveen, la forma correcta seria por medio de sumatoria en la variable i, pero el proceso de comparacion añade al menos otras 3 lineas y si se hace con el salto a "mayor que" en vez de a "mayor o igual que" se evita un ultimo ciclo, innecesario debido a que sumar por 0 no afectaria nuestro resultado (5050).  
   
 ### Reto 2  
+int sum = 0;
+For (i == 0; i <= 100; i++){
+   sum += i;
+}  
   
-
 ### Reto 3  
   
 
