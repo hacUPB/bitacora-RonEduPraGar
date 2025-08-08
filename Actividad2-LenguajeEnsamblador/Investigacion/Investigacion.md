@@ -57,4 +57,4 @@ Esto asigna el valor dentro de la direccion a la que apunta el puntero pvar el a
 Esto asigna el valor de direccion de var3 a pvar, el ampersand indica que se buscar el valor de la direccion en vez del valor almacenado en la variable.  
   
 ### Reto 9  
-  
+La idea seria dibujar la respuesta por medio de bitmaps, pero hacer las posibles respuestas a cada cambio de variables seria tedioso usando los metodos o lo que hemos visto hasta ahora. Tiene que haber un mejor metodo para mostrarlo en output.  

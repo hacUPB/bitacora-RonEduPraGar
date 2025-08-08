@@ -10,3 +10,6 @@ D=M
 @1
 A=M
 M=D
+(END)
+@END
+0;JMP
