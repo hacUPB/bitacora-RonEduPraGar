@@ -31,18 +31,30 @@ For (i == 0; i <= 100; i++){
 ### Reto 4  
 #### - ¿Cómo se declara un puntero en C++?  
 Por medio del asterisco(*) antes del nombre de la variable es posible identificar que se refiere a la posicion en vez de al valor de las variables, asi mismo, no puede interactuar directamente con variables sin este indicador.  
+  
 #### - ¿Cómo se define un puntero en C++?  
 Por medio del caracter ampersand (&) el cual identifica el numero de direccion de la variable, valor que se quiere almancenar en el puntero.  
+  
 #### - ¿Cómo se almacena en C++ la dirección de memoria de una variable?  
-  
+En C++ se crea un puntero, indicado por el asterisco y se le asigna el valor de una variable escribiendo un ampersand con el nombre de la variable: 
+ int variable = 10; int *pvar;
+ pvar = &variable;  
+   
 #### - ¿Cómo se escribe el contenido de la variable a la que apunta un puntero?  
-  
-  
-### Reto 7  
-  
+Usando el operador de desreferenciacion (el asterisco *) antes del nombre del puntero permite acceder al dato almacenado en la direccion a la que apunta o cambiarlo.  
 
 ### Reto 8  
+#### - ¿Qué hace esto int *pvar;?  
+Esto declara un puntero en c++.  
   
-
+#### - ¿Qué hace esto pvar = var;?  
+Esto asigna el valor de la variable var a la variable pvar, en el caso de que pvar sea puntero, genera error al no ser tipos compatibles de datos.  
+  
+#### - ¿Qué hace esto var2 = *pvar?  
+Esto asigna el valor dentro de la direccion a la que apunta el puntero pvar el asterisco indica el proceso de desreferenciacion.  
+  
+#### - ¿Qué hace esto pvar = &var3?  
+Esto asigna el valor de direccion de var3 a pvar, el ampersand indica que se buscar el valor de la direccion en vez del valor almacenado en la variable.  
+  
 ### Reto 9  
   
