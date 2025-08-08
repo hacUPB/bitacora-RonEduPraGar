@@ -38,12 +38,6 @@ Por medio del caracter ampersand (&) el cual identifica el numero de direccion d
 #### - ¿Cómo se escribe el contenido de la variable a la que apunta un puntero?  
   
   
-### Reto 5
-
-  
-### Reto 6  
-
-  
 ### Reto 7  
   
 
