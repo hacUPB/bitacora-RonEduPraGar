@@ -3,7 +3,11 @@
 ### Investigacion
 #### Actividad 1
 ##### 3. ¿Qué es una lista enlazada y en qué se diferencia de un arreglo en cuanto a la forma en que los elementos están almacenados en la memoria?
+Una lista enlazada hace uso de nodos
+estructura consecutiva, uso de nodos para identificar objeto siguiente en lista consecutiva, en un arreglo, esta posición se guarda de forma aleatoria en su creación.
+lista es en HEAP(almacenado), arreglo en STACK(temporal).
 ##### 4. Al observar el código de una lista enlazada en C++, ¿Cómo crees que se vinculan los nodos entre sí? ¿Qué estructura se utiliza para lograr esta conexión?
+Los nodos se vinculan haciendo uso de punteros de su propia clase para apuntar directamente a si mismos hasta que se llegue al nodo/punto final
 ##### 5. Cómo se gestiona la memoria en una lista enlazada? Investiga cómo se crea y se destruye un nodo en memoria utilizando el operador new y delete en C++.
 ##### 6. Considerando la estructura de una lista enlazada, ¿qué ventajas ofrece en comparación con un arreglo cuando se trata de insertar o eliminar elementos en posiciones intermedias?
 ##### 7. En el código presentado, ¿Cómo se asegura que no haya fugas de memoria? ¿Qué papel juega el destructor en la clase LinkedList?
