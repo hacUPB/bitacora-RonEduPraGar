@@ -38,3 +38,10 @@ Cada atributo y método asociado a una instancia del objeto añade un par de byt
 ##### Exploración de métodos virtuales
 ###### ¿Qué papel juegan las vtables en el polimorfismo?
 Son la estructura que permite usar diferentes valores de atributos a partir de objetos predefinidos con variaciones especificas.
+### Reto
+La idea inicial del reto se basa en un projecto en el cual 2 sets de nodos triangulares los cuales se mueven de forma exponencial por la pantalla, 
+lo que pueda significar, realmente es una prueba de ver como interpreta este concepto ChatGPT.
+La idea un poco mas posible de entender es que se muevan a forma de un cierre ya sea que inicie en una linea conjunta cerrada en el centro
+y se abra hacia los bordes en un movimiento circular, o que esten separadas las curvas y converjan en la mitad de la pantalla.
+Esta idea esta aun abierta a desarrollar mas dependiendo de como quede el codigo, y mas especificamente, de que ChatGPT 
+no le pierda el hilo a lo que este creando en el proceso, terminando con algo completamente diferente (como en la anterior entrega despues del intento final 3).
