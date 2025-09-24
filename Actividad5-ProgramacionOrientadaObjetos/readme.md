@@ -70,7 +70,58 @@ lo que pueda significar, realmente es una prueba de ver como interpreta este con
 La idea un poco mas posible de entender es que se muevan a forma de un cierre ya sea que inicie en una linea conjunta cerrada en el centro
 y se abra hacia los bordes en un movimiento circular, o que esten separadas las curvas y converjan en la mitad de la pantalla.
 Esta idea esta aun abierta a desarrollar mas dependiendo de como quede el codigo, y mas especificamente, de que ChatGPT 
-no le pierda el hilo a lo que este creando en el proceso, terminando con algo completamente diferente (como en la anterior entrega despues del intento final 3).
+no le pierda el hilo a lo que este creando en el proceso, terminando con algo completamente diferente (como en la anterior entrega despues del intento final 3).  
+
+
+    
+El primer intento de ver el posible programa creado por esta maravilla llevo a varios errores desconocidos y archivos que no funcionaban, asi que se pasa a un 2do intento.
+Se vuelve a usar la pregunta inicial dentro de la Unidad "¿Puedes ayudarme a diseñar un proyecto de arte generativo en C++ utilizando openFrameworks que utilice encapsulamiento,
+herencia y polimorfismo? Quiero implementar un sistema de partículas con diferentes comportamientos.", esta vez resolver los problemas de creacion de archivos,
+donde se vuelve un juego de adivinanza entre que problema que no existiria si un ser humano creara el codigo desde 0, funciones y soluciones que cambian con cada
+iteración y errores nunca antes vistos durante el proceso de codigo en programación orientada a objetos vuelven inusable el programa.  
+  
+(Se que estoy haciendo esto a proposito para ver como funciona en escalas relativamente grandes de codigo, pero los dolores
+de cabeza de arreglar el codigo son mas grandes que intentar hacer el codigo a mano, cualquier eficiencia que se pueda conseguir es
+inversamente proporcional al tamaño del fragmento de codigo que le pidas a la IA)  
+  
+Despues de varios intentos de hacer que se tenga sentido sobre el programa, se entiende que el problema no es directamente dentro de los mismos
+archivos (en el segundo intento hace falta el archivo de Behavior.h, al no identificar la existencia de 2 archivos con nombres demasiado similares,
+de nuevo, otra inconveniencia que no deberia pasar en un entorno con experiencia) sino en la ubicacion de creacion de las clases,
+despues de una corta investigación sobre problemas similares, se llega a la conclusión de que el Explorador de Soluciones no esta
+mostrando los archivos en sus ubicaciones reales y se ajusta la opcion de "Mostrar todos los archivos" para observar que las clases
+(archivos .h y .cpp) creadas despues de la plantilla estan siendo ubicados fuera de la carpeta "src", despues de mover todos estos 
+archivos a esta carpeta el programa funciona correctamente.  
+  
+Cosa que lleva a la discusion de la 2da idea generada solamente por ChatGPT, la cual aunque interesante, es ejecutada de tal manera que se
+vuelve considerablemente mas pesado de correr el programa que cualquier otro projecto hecho a lo largo de esta carrera, es dificil observar
+su funcionamiento debido a la falta de limites razonables sobre la cantidad de particulas que genera, a la vez que es dificil entender las
+diferencias entre cada tipo de comportamiento de las particulas.  
+  
+Mas pruebas demuestran que el problema no esta en el numero de particulas (la memoria se mantiene estable si no se interfiere en
+el proceso) sino en el manejo del programa de su 2da función la cual se define como un atractor de estas particulas que parecen
+flotar en patrones irregulares, estos atractores generan interacciones constantes que en el proceso destruyen el desempeño
+y la estabilidad de uso de recursos por completo, desde que se introduce un atractor, la memoria procede a subir de forma constante
+sin mostrar señales de detenerse, el frame rate tambien disminuye significativamente y añadir mas de un atractor podria
+detener todo por completo.  
+  
+Bajo otra tanda de observaciones, es posible ver que la funcion de atraccion del atractor solo funciona en el primero de estos 
+objetos creados, todo objeto despues del primero solo crea un punto gris que no interactua con el resto de las particulas, lo
+que nos deja con una memoria sin atractor que inicia en 147 MB (sigue subiendo con el tiempo que corre el programa, alrededor de cada
+30 segundos sube un MB, pero se detiene/demora mas desde 152 MB) y con atractor que depende completamente de la cantidad 
+de particulas interactuando con el punto causando un aumento significativo hasta alrededor de 226 MB.  
+  
+Iniciar con esta "idea" tenia el objetivo de generar un entendimiento mas extenso de posibles maneras en las cuales puede funcionar
+el uso de estos 3 conceptos (encapsulamiento, herencia y polimorfismo), dando mas espacio para profundizar en lo que implican y
+sus limitaciones dentro de lo que podria ser util en el proceso de creacion del arte generativo, a la vez que era una prueba
+de fuego de que se le viene primero a la mente a ChatGPT cuando no se le den mas parametros que los basicos sobre un programa
+de enfoque creativo, desde este punto se desarrollara la idea principal.  
+
+
+De vuelta a la idea inicial, la cual tiene un concepto igual de abierto en cuanto a interpretación (2 lineas de triangulos
+en movimiento no son muy descriptivos, mucho menos el movimiento de forma exponencial).
+Se usa esta idea dentro de ChatGPT "¿Puedes ayudarme a diseñar un proyecto de arte generativo en C++ utilizando openFrameworks que utilice encapsulamiento,
+herencia y polimorfismo? Este es un proyecto en el cual 2 sets de nodos triangulares opuestos se mueven de forma exponencial por la pantalla".
+
 #### Enunciado
 ##### Diseñar y desarrollar un proyecto de arte generativo utilizando openFrameworks.
 ##### Aplicar conceptos de encapsulamiento, herencia y polimorfismo.
