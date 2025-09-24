@@ -38,6 +38,32 @@ Cada atributo y método asociado a una instancia del objeto añade un par de byt
 ##### Exploración de métodos virtuales
 ###### ¿Qué papel juegan las vtables en el polimorfismo?
 Son la estructura que permite usar diferentes valores de atributos a partir de objetos predefinidos con variaciones especificas.
+##### Uso de Punteros y Referencias
+###### Observar si el tamaño de la instancia cambia al usar punteros a funciones.
+###### Verificar cómo se almacenan estos punteros.
+##### Reflexión
+###### ¿Cuál es la relación entre los punteros a métodos y la vtable?
+###### ¿Cómo afectan estos mecanismos al rendimiento del programa?
+###### ¿Dónde residen los datos y métodos de una clase en la memoria?
+###### ¿Cómo interactúan las diferentes partes en tiempo de ejecución?
+###### Conclusión: cómo esta comprensión afecta el diseño de sistemas.
+#### Sección 3 - Implementación Interna de Encapsulamiento, Herencia y Polimorfismo
+##### Profundizando en el encapsulamiento
+###### ¿Qué es el encapsulamiento y cuál es su propósito en la programación orientada a objetos?
+###### ¿Por qué es importante proteger los datos de una clase y restringir el acceso desde fuera de la misma?
+###### ¿Qué significa reinterpret_cast y cómo afecta la seguridad del programa?
+###### ¿Por qué crees que se pudo acceder a los miembros privados de MyClass en este experimento, a pesar de que el compilador normalmente lo impediría?
+###### ¿Cuáles podrían ser las consecuencias de utilizar técnicas como las mostradas en este experimento en un programa real?
+###### ¿Qué implicaciones tiene este experimento sobre la confianza en las barreras de encapsulamiento que proporciona C++?
+##### Herencia y la Relación en Memoria
+###### Layout de memoria: ¿Cómo los objetos derivados contienen los datos de las clases base?
+###### ¿Cómo se organizan los atributos en memoria?
+###### ¿Qué sucede si agregamos más niveles de herencia?
+##### Polimorfismo y Vtables en detalle
+###### ¿Cómo utiliza el programa las vtables para el polimorfismo?
+###### ¿Cuál es el impacto en el rendimiento?
+###### ¿Cómo se implementan internamente el encapsulamiento, la herencia y el polimorfismo?
+###### Análisis: ventajas y desventajas en términos de eficiencia y complejidad.
 ### Reto
 La idea inicial del reto se basa en un projecto en el cual 2 sets de nodos triangulares los cuales se mueven de forma exponencial por la pantalla, 
 lo que pueda significar, realmente es una prueba de ver como interpreta este concepto ChatGPT.
@@ -45,3 +71,12 @@ La idea un poco mas posible de entender es que se muevan a forma de un cierre ya
 y se abra hacia los bordes en un movimiento circular, o que esten separadas las curvas y converjan en la mitad de la pantalla.
 Esta idea esta aun abierta a desarrollar mas dependiendo de como quede el codigo, y mas especificamente, de que ChatGPT 
 no le pierda el hilo a lo que este creando en el proceso, terminando con algo completamente diferente (como en la anterior entrega despues del intento final 3).
+#### Enunciado
+##### Diseñar y desarrollar un proyecto de arte generativo utilizando openFrameworks.
+##### Aplicar conceptos de encapsulamiento, herencia y polimorfismo.
+#### Experimentación
+#### Reflexión y Ajuste Final
+##### ¿Cómo influyó el entendimiento de los mecanismos internos de OOP en el proyecto?
+##### ¿Qué desafíos enfrentaste y cómo los superaste?
+##### ¿Qué aprendiste sobre el equilibrio entre diseño y eficiencia?
+#### Evidencias de los resultados de aprendizaje
