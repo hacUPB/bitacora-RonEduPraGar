@@ -16,7 +16,7 @@ En este caso, el patrón state maneja el comportamiento de las particulas, hacie
 - Modifica el comportamiento de las partículas.
 - Crea otros eventos para notificar a las partículas.
 Primero, dentro de la estructura de Factory, somos capaces de observar la estructura de las posibles particulas en el programa.
-``` c++
+``` cpp
 Particle * ParticleFactory::createParticle(const std::string & type) {
 	Particle * particle = new Particle();
 
@@ -35,7 +35,7 @@ Particle * ParticleFactory::createParticle(const std::string & type) {
 }
 ```
 A esta estructura le agregamos otro else donde se busca crear un 4to tipo de particula con un intervalo mas grande de tamaño (2-8) y de color neutro (200, 200, 200).
-``` c++
+``` cpp
 Particle * ParticleFactory::createParticle(const std::string & type) {
 	Particle * particle = new Particle();
 
@@ -57,7 +57,7 @@ Particle * ParticleFactory::createParticle(const std::string & type) {
 }
 ```
 Luego en la parte de setup(), se añade el ciclo for que define la cantidad de particulas relacionadas al tipo de particula:
-``` c++
+``` cpp
 void ofApp::setup() {
 	ofBackground(0);
 	// Crear partículas usando la fábrica
